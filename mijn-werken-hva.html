@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  
+  <link rel="stylesheet" href="portfolio-werken.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="javasheet"  href="portfolio.js">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="afbeeldingen/favicon.png">
+</head>
+
+<body>
+  <header>
+
+    <nav>
+      <ul>
+
+       <li>       
+         <a href="landingspagina.html">
+           <img src="afbeeldingen/standaard-logo-wit.png" class="Logo" alt="Logo">
+         </a>
+       </li>
+
+       <li><a class="nav-link" href="index.html"> HOME</a></li>
+       <li><a class="nav-link" href="over-mij.html"> WIE BEN IK</a></li>
+       <li><a class="nav-link" href="mijn-werken.html"> MIJN WERKEN</a></li>
+       <li><a class="nav-link" href="contact.html"> CONTACT</a></li>
+
+     </ul>
+   </nav>
+
+  </header>
+
+<main>
+
+
+<h1>
+  Mijn Werken
+</h1>
+
+<img id="scroll" src="afbeeldingen/scroll_arrow.png" alt="Image to hide on scroll">
+
+<div class="square-wrapper">
+  <div class="square"></div>
+</div>
+
+<ul class="werken-classes">
+
+  <li>
+    <h2>De Lieve Groene Stad</h2>
+    <a href="mijn-werken-hva.html">
+      <img src="afbeeldingen/final-exports-16.png" class="werken-class" alt="De lieve groene stad opdracht">
+    </a>
+    <p>
+      Een opdracht voor het individuele project "De Lieve Groene Stad", 
+      voor dit project moesten we een mobiele app/website maken dat het verhaal van 
+      een duurzaam initiatief in Amsterdam toont. 
+    </p>
+  </li>
+
+  <li>
+    <h2>Find Your Flow</h2>
+    <a href="mijn-werken-roc.html">
+      <img src="afbeeldingen/roc-midden-nederland.png" class="werken-class" alt="ROC logo">
+    </a>
+    <h3>
+      Een collectie werken die ik tijdens mijn tijd op het ROC Creative college heb gemaakt
+    </h3>
+  </li>
+
+  <li>
+    <h2>Persoonlijke werken</h2>
+    <a href="mijn-werken-prive.html">
+      <img src="afbeeldingen/standaard-logo-wit.png" class="werken-class" alt="Wietse Verhagen Logo">
+    </a>
+    <h3>
+      Een collectie werken die ik in mijn vrije tijd heb gemaakt
+    </h3>
+  </li>
+
+</ul>
+
+</main>
+
+<footer>
+
+  <div class="logo-en-tekst">
+    <div class="footer-tekstje">
+      <p>Deze Website is gemaakt voor het persoonlijk leerdoel project</p>
+      <p>Student:Wietse Verhagen</p>
+      <p>Klas: Violet</p>
+      <p>studentnummer: 500959142</p>
+    </div>
+  </div>
+
+  <div class="useful-link">
+      <h2>Navigeer De Pagina</h2>
+      <ul class="use-links">
+          <li><a href="index.html"><i class="fa-solid fa-angles-right"></i> > Home</a></li>
+          <li><a href="afleveringen-nieuw.html"><i class="fa-solid fa-angles-right"></i> > Wie ben ik</a></li>
+          <li><a href="webwinkel.html"><i class="fa-solid fa-angles-right"></i> > Mijn werken</a></li>
+          <li><a href="over-ons.html"><i class="fa-solid fa-angles-right"></i> > Contact</a></li>
+      </ul>
+  </div>
+
+  <div class="social-links">
+    <h2>Volg Mij</h2>
+      <ul class="social-icons">
+        <li>
+          <img src="afbeeldingen/888039_logo_512x512.png" class="social-icon" alt="Facebook">
+            <a href="https://www.facebook.com/wietse.verhagen.10/">
+              Facebook</a>
+        </li>
+        <li>
+          <img src="afbeeldingen/instagram-logo-instagram-logo-transparent-instagram-icon-transparent-free-free-png.webp" class="social-icon" alt="Instagram">
+            <a href="https://www.instagram.com/wietsesworks/">
+             Instagram</a>
+        </li>
+        <li>
+          <img src="afbeeldingen/LinkedIn_icon.png" class="social-icon" alt="Twitter">
+            <a href="https://www.linkedin.com/in/wietse-verhagen-537775201/">
+              LinkedIn</a>
+        </li>
+      </ul>
+  </div>
+
+  <a href="index.html"><img src="afbeeldingen/standaard-logo-wit-footer-crop.png" alt="logo-footer" class="img-logo-footer"></a>
+
+</footer>
+
+<section id="copy-right">
+  <h4> 
+    © 2024 | Door Wietse Verhagen
+  </h4>
+</section>
+<link rel="javasheet"  href="portfolio.js">
+<script>
+  let prevScrollpos = document.scrollY;
+document.onscroll = function() {
+  let currentScrollPos = document.scrollY;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("scroll").style.opacity = "0%";
+  } else {
+    document.getElementById("scroll").style.opacity = "100%";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const square = entry.target.querySelector('.square');
+
+    if (entry.isIntersecting) {
+      square.classList.add('square-animation');
+	  return; // if we added the class, exit the function
+    }
+
+    // We're not intersecting, so remove the class!
+    square.classList.remove('square-animation');
+  });
+});
+
+observer.observe(document.querySelector('.square-wrapper'));
+</script>
+</body>
+
+</html>

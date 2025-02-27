@@ -1,0 +1,266 @@
+body {
+    font-family: arial;
+    color:white;
+    background-color: black; 
+    background-image: linear-gradient(to bottom, black, #818085);
+    margin:0%;
+}
+
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
+.landings-pagina-foto {
+    display: flex;
+    width: 50%;
+    justify-content: left;
+}
+
+.landing-pagina {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.landing-pagina h3 {
+    margin-top:0.2em;
+    margin-bottom:0.2em;
+}
+
+.landing-pagina-nav {
+    width: 40%;
+    margin-left: 5%;
+}
+
+.landing-pagina-nav-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.landing-pagina-button-home {
+    width: 7.5em;
+    padding: 0em 1em;
+    border-radius: 1.5em;
+    background-color: white;
+    border: none;
+    color: #000;
+    text-align: center;
+    font-size: 1.5em;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .landing-pagina-button-home h3 {
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .landing-pagina-button-home h3:after {
+    content: ' \00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .landing-pagina-button-home:hover h3 {
+    padding-right: 25px;
+  }
+  
+  .landing-pagina-button-home:hover h3:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.landing-pagina-button-wie-ben-ik {
+    width: 9em;
+    padding: 0em 1em;
+    border-radius: 1.5em;
+    background-color: white;
+    border: none;
+    color: #000;
+    text-align: center;
+    font-size: 1.5em;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    
+  }
+  
+  .landing-pagina-button-wie-ben-ik h3 {
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .landing-pagina-button-wie-ben-ik h3:after {
+    content: ' \00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .landing-pagina-button-wie-ben-ik:hover h3 {
+    padding-right: 25px;
+  }
+  
+  .landing-pagina-button-wie-ben-ik:hover h3:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.landing-pagina-button-mijn-werken {
+    width: 10em;
+    padding: 0em 1em;
+    border-radius: 1.5em;
+    background-color: white;
+    border: none;
+    color: #000;
+    text-align: center;
+    font-size: 1.5em;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .landing-pagina-button-mijn-werken h3 {
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .landing-pagina-button-mijn-werken h3:after {
+    content: ' \00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .landing-pagina-button-mijn-werken:hover h3 {
+    padding-right: 25px;
+  }
+  
+  .landing-pagina-button-mijn-werken:hover h3:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+/* footer
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    justify-content: space-around;
+    background: #ada3ce;
+    background-image: linear-gradient(rgb(0, 0, 0), #818085);
+	padding-top: 5rem; 
+}
+
+.social-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    
+    }
+
+    .social-icons{
+        display: flex;
+        gap: 3rem; 
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .social-icons li{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .social-icons a:visited {
+        color: white;
+    }
+    
+    .social-icons a:hover{
+        color: #000;
+    }
+    .social-icons a {
+        padding: 0.4rem 1rem 0.4rem 1rem;
+        border-radius: 3px;
+        font-size: 16px;
+        margin-right: 12px;
+    }
+
+    .useful-link h2{
+        padding-bottom: 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .use-links{
+        line-height: 32px;
+    }
+    .use-links li i{
+        font-size: 14px;
+        padding-right: 8px;
+        color: white;
+    }
+    .use-links li a{
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+    }
+    .use-links li a:hover{
+        color: #000;
+    }
+
+    .logo-en-tekst {
+        display: flex;
+        gap: 3rem; 
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        color: white;
+        width: 15em;
+    }
+.img-logo-footer {
+    width: 50%;
+    align-items: center;
+    margin: 0 0;
+    padding-top: 3em;
+    padding-bottom: 0;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.social-icon{
+    width: 2em;
+    height: 2em;
+    margin: 0 0;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 5%;
+    Padding-right: 5%;   
+}
+*/
+
+#copy-right{
+    padding: 3rem;
+    margin-top: 0px;
+	padding-top: 1em;
+    padding-bottom: 0em;
+    text-align: center;
+	background-color: transparent;
+
+}
