@@ -7,27 +7,30 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Portfolio</title>
+   <title>Wietse Verhagen</title>
    <link rel="icon" type="image/x-icon" href="afbeeldingen/favicon.png">
  </head>
 
 <body>
-   <header>
+  <header>
 
     <nav>
       <ul>
+  
         <li>       
           <a href="index.html">
-              <img src="afbeeldingen/Logo-podcast-wit-test-2-28.png" class="Logo" alt="Logo">
+            <img src="afbeeldingen/standaard-logo-wit.png" class="Logo" alt="Logo">
           </a>
         </li>
-        <li><a class="nav-link" href="index.html"> HOME</a></li>
-        <li><a class="nav-link" href="afleveringen-nieuw.html"> AFLEVERINGEN</a></li>
-        <li><a class="nav-link" href="webwinkel.html"> SHOP</a></li>
-        <li><a class="nav-link" href="over-ons.html"> OVER ONS</a></li>
+  
+        <li><a class="nav-link" href="home.html"> HOME</a></li>
+        <li><a class="nav-link" href="over-mij.html"> WIE BEN IK</a></li>
+        <li><a class="nav-link" href="mijn-werken.html"> MIJN WERKEN</a></li>
+        <li><a class="nav-link" href="contact.html"> CONTACT</a></li>
+  
       </ul>
     </nav>
-      
+  
   </header>
 
 <main>
@@ -37,35 +40,46 @@
   Mijn Werken
 </h1>
 
+<div class="scroll-indicator">
+  <div class="scroll-content">
+    <img id="scroll" src="afbeeldingen/scroll_arrow.png" alt="Image to hide on scroll">
+    <p id="scroll-text">
+      Scroll voor meer
+    </p>
+  </div>
+</div>
+
 <ul class="werken-classes">
 
   <li>
-    <h2> Aflevering 1</h2>
-    <a href="afleveringen-alle.html">
-      <img src="afbeeldingen/Roxy-dekker.png" class="werken-class" alt="Roxy Dekker">
+    <h2>De Lieve Groene Stad</h2>
+    <a href="mijn-werken-hva.html">
+      <img src="afbeeldingen/final-exports-16.png" class="werken-class" alt="De lieve groene stad opdracht">
+    </a>
+    <p>
+      Een opdracht voor het individuele project "De Lieve Groene Stad", 
+      voor dit project moesten we een mobiele app/website maken dat het verhaal van 
+      een duurzaam initiatief in Amsterdam toont. 
+    </p>
+  </li>
+
+  <li>
+    <h2>Find Your Flow</h2>
+    <a href="mijn-werken-hva.html">
+      <img src="afbeeldingen/Logo podcast wit test 2-28.png" class="werken-class" alt="Find your Flow logo">
     </a>
     <h3>
-      Roxy Dekker: De beste nieuwkomer van het festivalseizoen
+      Een Logo voor een podcast die zich focust op nieuwe opkomende artiesten, gemaakt voor het vak Content
     </h3>
   </li>
 
   <li>
-    <h2> Aflevering 2</h2>
-    <a href="afleveringen-alle.html">
-      <img src="afbeeldingen/Bizzy.png" class="werken-class" alt="Bizzy">
+    <h2>Grunge Posters</h2>
+    <a href="mijn-werken-hva.html">
+      <img src="afbeeldingen/J.cole_Poster_1.jpg" class="werken-class" alt="Ontwerpgeschiedenis poster">
     </a>
     <h3>
-      Bizzey: De schaduw kanten van succes en het belang van mentale gezondheid. 
-    </h3>
-  </li>
-
-  <li>
-    <h2> Aflevering 3</h2>
-    <a href="afleveringen-alle.html">
-      <img src="afbeeldingen/SMIB.jpg" class="werken-class" alt="SMIB">
-    </a>
-    <h3>
-      SMIB: De crew die de Nederlandse HipHop scene een nieuwe richting geeft
+      Een in de "Grunge" art stijl, gemaakt voor het vak Ontwerp geschiedenis
     </h3>
   </li>
 
@@ -125,6 +139,7 @@
   </h4>
 </section>
 
+<script src="portfolio.js"></script>
 </body>
 
 </html>

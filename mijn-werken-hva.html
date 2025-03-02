@@ -5,10 +5,9 @@
   
   <link rel="stylesheet" href="portfolio-werken.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-  <link rel="javasheet"  href="portfolio.js">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Wietse Verhagen</title>
   <link rel="icon" type="image/x-icon" href="afbeeldingen/favicon.png">
 </head>
 
@@ -17,21 +16,21 @@
 
     <nav>
       <ul>
-
-       <li>       
-         <a href="landingspagina.html">
-           <img src="afbeeldingen/standaard-logo-wit.png" class="Logo" alt="Logo">
-         </a>
-       </li>
-
-       <li><a class="nav-link" href="index.html"> HOME</a></li>
-       <li><a class="nav-link" href="over-mij.html"> WIE BEN IK</a></li>
-       <li><a class="nav-link" href="mijn-werken.html"> MIJN WERKEN</a></li>
-       <li><a class="nav-link" href="contact.html"> CONTACT</a></li>
-
-     </ul>
-   </nav>
-
+  
+        <li>       
+          <a href="index.html">
+            <img src="afbeeldingen/standaard-logo-wit.png" class="Logo" alt="Logo">
+          </a>
+        </li>
+  
+        <li><a class="nav-link" href="home.html"> HOME</a></li>
+        <li><a class="nav-link" href="over-mij.html"> WIE BEN IK</a></li>
+        <li><a class="nav-link" href="mijn-werken.html"> MIJN WERKEN</a></li>
+        <li><a class="nav-link" href="contact.html"> CONTACT</a></li>
+  
+      </ul>
+    </nav>
+  
   </header>
 
 <main>
@@ -41,10 +40,13 @@
   Mijn Werken
 </h1>
 
-<img id="scroll" src="afbeeldingen/scroll_arrow.png" alt="Image to hide on scroll">
-
-<div class="square-wrapper">
-  <div class="square"></div>
+<div class="scroll-indicator">
+  <div class="scroll-content">
+    <img id="scroll" src="afbeeldingen/scroll_arrow.png" alt="Image to hide on scroll">
+    <p id="scroll-text">
+      Scroll voor meer
+    </p>
+  </div>
 </div>
 
 <ul class="werken-classes">
@@ -59,27 +61,47 @@
       voor dit project moesten we een mobiele app/website maken dat het verhaal van 
       een duurzaam initiatief in Amsterdam toont. 
     </p>
+    <p>
+      klik op <a href="https://wieverz.github.io/de-lieve-groene-stad-Wietse-Verhagen/">Deze link</a> 
+      om het gehele project te zien!
+      <i>(tip! bekijk deze link via mobiel!)</i>
+    </p>
   </li>
 
   <li>
     <h2>Find Your Flow</h2>
-    <a href="mijn-werken-roc.html">
-      <img src="afbeeldingen/roc-midden-nederland.png" class="werken-class" alt="ROC logo">
+    <a href="mijn-werken-hva.html">
+      <img src="afbeeldingen/Logo podcast wit test 2-28.png" class="werken-class" alt="Find your Flow logo">
     </a>
-    <h3>
-      Een collectie werken die ik tijdens mijn tijd op het ROC Creative college heb gemaakt
-    </h3>
+    <p>
+      Een Logo voor een podcast die zich focust op nieuwe opkomende artiesten, gemaakt voor het vak Content
+    </p>
+    <p>
+    klik op <a href="https://wieverz.github.io/fyf-internetstandaarden/">Deze link</a> 
+      om het gehele project te zien!
+    </p>
   </li>
 
   <li>
-    <h2>Persoonlijke werken</h2>
-    <a href="mijn-werken-prive.html">
-      <img src="afbeeldingen/standaard-logo-wit.png" class="werken-class" alt="Wietse Verhagen Logo">
+    <h2>Grunge Posters</h2>
+    <a href="mijn-werken-hva.html">
+      <img src="afbeeldingen/J.cole_Poster_1.jpg" class="werken-class" alt="Ontwerpgeschiedenis poster">
     </a>
-    <h3>
-      Een collectie werken die ik in mijn vrije tijd heb gemaakt
-    </h3>
+    <p>
+      Een poster over de artiest J.cole in de "Grunge" art stijl, gemaakt voor het vak Ontwerp geschiedenis
+    </p>
   </li>
+
+  <li>
+    <h2>Grunge Posters</h2>
+    <a href="mijn-werken-hva.html">
+      <img src="afbeeldingen/travis_scott_poster.jpg" class="werken-class" alt="Ontwerpgeschiedenis poster">
+    </a>
+    <p>
+      Een poster over de artiest Travis scott in de "Grunge" art stijl, gemaakt voor het vak Ontwerp geschiedenis
+    </p>
+  </li>
+
 
 </ul>
 
@@ -136,35 +158,9 @@
     © 2024 | Door Wietse Verhagen
   </h4>
 </section>
-<link rel="javasheet"  href="portfolio.js">
-<script>
-  let prevScrollpos = document.scrollY;
-document.onscroll = function() {
-  let currentScrollPos = document.scrollY;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("scroll").style.opacity = "0%";
-  } else {
-    document.getElementById("scroll").style.opacity = "100%";
-  }
-  prevScrollpos = currentScrollPos;
-}
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    const square = entry.target.querySelector('.square');
+<script src="portfolio.js"></script>
 
-    if (entry.isIntersecting) {
-      square.classList.add('square-animation');
-	  return; // if we added the class, exit the function
-    }
-
-    // We're not intersecting, so remove the class!
-    square.classList.remove('square-animation');
-  });
-});
-
-observer.observe(document.querySelector('.square-wrapper'));
-</script>
 </body>
 
 </html>
